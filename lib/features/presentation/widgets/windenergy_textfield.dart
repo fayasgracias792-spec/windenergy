@@ -5,21 +5,27 @@ import 'package:windenergy/ui/couleurs.dart';
 class WindenergyTextField extends StatelessWidget {
   final String hintText;
   final bool obscureText;
+  final bool enabled;
   TextEditingController? controller;
 
-  WindenergyTextField({super.key, this.hintText = "", this.controller, this.obscureText = false});
+  WindenergyTextField({
+    super.key,
+    this.hintText = "",
+    this.controller,
+    this.obscureText = false,
+    this.enabled = true,
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      enabled: enabled,
       obscureText: obscureText,
-      controller: controller,
+      controller: controller,      
       decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
         filled: true,
-        fillColor: couleurFondSecondaire,
+        fillColor: enabled? couleurFondSecondaire:Colors.grey[300],
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: couleurSecondaire),
         ),
