@@ -1,11 +1,9 @@
-import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:windenergy/features/domain/usecases/authentification.dart';
 import 'package:windenergy/features/domain/usecases/consulter_etat_eolienne.dart';
 import 'package:windenergy/features/domain/usecases/consulter_liste_eoliennes.dart';
 import 'package:windenergy/features/domain/usecases/gerer_eolienne.dart';
-import 'package:windenergy/features/presentation/blocs/blocks.dart';
 
 class AuthentifierMock extends Mock implements Authentifier {}
 

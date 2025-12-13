@@ -13,7 +13,7 @@ import 'package:windenergy/ui/utils.dart';
 
 class EnregistrerPage extends StatefulWidget {
 
-  EnregistrerPage({super.key});
+  const EnregistrerPage({super.key});
 
   @override
   State<EnregistrerPage> createState() => _EnregistrerPageState();

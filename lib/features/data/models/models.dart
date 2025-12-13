@@ -27,7 +27,7 @@ class UtilisateurModel extends Utilisateur {
 }
 
 class EolienneModel extends Eolienne {
-  EolienneModel({
+  const EolienneModel({
     super.idUtilisateur,
     super.actif,
     super.hashSecurite,
